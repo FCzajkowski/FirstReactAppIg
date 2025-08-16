@@ -1,0 +1,33 @@
+body{
+    margin:0;
+    border:0;
+    padding:0;
+    height:100vh;
+
+    background-color: black;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+button{
+    border:1px solid white;
+    border-bottom:4px solid white;
+    background-color: red;
+    color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    transition:250ms;
+    &:active{
+        transform: translateY(4px);
+        border-bottom:transparent;
+        background-color: green;
+        transition:2ms; 
+    }
+}
